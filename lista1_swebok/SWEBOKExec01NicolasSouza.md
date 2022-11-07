@@ -1,7 +1,7 @@
 ---
 title: Fundamentos de IHC - SWEBOK
 author: "Nicolas Chagas Souza (matrícula: 20/0042327)"
-date: 30/10/2022 
+date: 04/11/2022 
 geometry: left=2cm,right=2cm,top=1cm,bottom=2cm
 output: pdf_document
 ---
