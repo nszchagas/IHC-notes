@@ -81,6 +81,7 @@ Lista de Exercícios
 
     - O designer pode começar por qualquer uma das pontas.
     - A única exigência é que, após concluir cada atividade, o designer avalie os resultados obtidos para verificar se ele encontrou ou está no caminho de encontrar uma solução satisfatória.
+    
     ![](imgs/09-22-28.png)
 
 18. Sobre a Engenharia de Usabilidade de Nielsen, quais são as atividades desse ciclo de vida? Explique cada uma delas.
