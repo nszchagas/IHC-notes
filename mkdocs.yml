@@ -1,0 +1,12 @@
+site_name: IHC - notes
+theme:
+  name: material
+  features:
+    - tabs
+    - navigation.section
+  palette:
+    primary: black
+
+nav:
+  - Home: index.md
+  - Análise de Requisitos: analise_de_requisitos.md
