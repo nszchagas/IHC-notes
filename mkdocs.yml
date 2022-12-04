@@ -9,4 +9,5 @@ theme:
 
 nav:
   - Home: index.md
-  - Análise de Requisitos: analise_de_requisitos.md
+  - Análise de Requisitos: listas/analise_de_requisitos.md
+  - Princípios e Diretrizes: listas/principios.md
