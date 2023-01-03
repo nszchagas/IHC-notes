@@ -1,0 +1,824 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Nicolas Chagas Souza (20/0042327)">
+      
+      
+      
+        <link rel="prev" href="../..">
+      
+      
+        <link rel="next" href="../principios/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.1">
+    
+    
+      
+        <title>Análise de Requisitos - Lista de Exercícios - IHC - notes</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.3bd4f189.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#parte-a" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="IHC - notes" class="md-header__button md-logo" aria-label="IHC - notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            IHC - notes
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Análise de Requisitos - Lista de Exercícios
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent=""  aria-label="Dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent=""  aria-label="Light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/nszchagas/IHC-notes" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    IHC-notes
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="IHC - notes" class="md-nav__button md-logo" aria-label="IHC - notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    IHC - notes
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/nszchagas/IHC-notes" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    IHC-notes
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Análise de Requisitos
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Análise de Requisitos
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#parte-a" class="md-nav__link">
+    Parte A
+  </a>
+  
+    <nav class="md-nav" aria-label="Parte A">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-qual-o-objetivo-da-atividade-da-analise-situacao-atual" class="md-nav__link">
+    1) Qual o objetivo da atividade da analise situação atual?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-o-que-se-referem-os-requisitos-do-usuario" class="md-nav__link">
+    2) O que se referem os requisitos do usuário?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-qual-o-principal-erro-cometido-por-uma-equipe-de-design" class="md-nav__link">
+    3) Qual o principal erro cometido por uma equipe de design?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-qual-e-o-problema-referente-ao-termo-requisitos-e-o-que-e-importante-fazer" class="md-nav__link">
+    4) Qual é o problema referente ao termo “requisitos” e o que é importante fazer?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-quais-sao-os-quatro-pontos-principais-envolvidos-na-coleta-de-dados-definido-por-sharp-explicada-cada-um-desses-pontos" class="md-nav__link">
+    5) Quais são os quatro pontos principais envolvidos na coleta de dados definido por Sharp? Explicada cada um desses pontos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-quando-o-termo-de-consentimento-pode-nao-ser-necessario-de-ser-usado" class="md-nav__link">
+    6) Quando o termo de consentimento pode não ser necessário de ser usado?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-qual-a-atividade-mais-essencial-no-desenvolvimento-de-um-produto-de-qualidade" class="md-nav__link">
+    7) Qual a atividade mais essencial no desenvolvimento de um produto de qualidade?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-em-geral-quais-tipos-de-dados-sao-coletados-sobre-o-proprio-usuario" class="md-nav__link">
+    8) Em geral, quais tipos de dados são coletados sobre o próprio usuário?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-em-geral-quais-tipos-de-dados-sao-coletados-sobre-as-tarefas-do-usuario" class="md-nav__link">
+    9) Em geral, quais tipos de dados são coletados sobre as tarefas do usuário?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-de-quem-coletar-dados" class="md-nav__link">
+    10) De quem coletar dados?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-para-identificar-as-partes-interessadas-que-podem-fornecer-informacoes-relevantes-ao-projeto-de-um-sistema-quem-devemos-descobrir" class="md-nav__link">
+    11) Para identificar as partes interessadas que podem fornecer informações relevantes ao projeto de um sistema, quem devemos descobrir?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-caso-o-projeto-em-questao-seja-de-melhoria-ou-expansao-de-um-sistema-existente-quem-e-importante-conhecer-tambem" class="md-nav__link">
+    12) Caso o projeto em questão seja de melhoria ou expansão de um sistema existente, quem é importante conhecer também?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-por-que-e-preciso-entender-do-dominio-do-trabalho-antes-de-comecar-a-trabalhar-com-um-usuario-explique-cada-um-desses-dominios" class="md-nav__link">
+    13) Por que é preciso entender do domínio do trabalho antes de começar a trabalhar com um usuário? Explique cada um desses domínios
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-onde-buscar-dados-que-pode-ajudar-a-aprender-sobre-o-produto-explique-cada-uma-dessas-fontes" class="md-nav__link">
+    14) Onde buscar dados que pode ajudar a aprender sobre o produto? Explique cada uma dessas fontes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-pode-se-fazer-analise-competitiva-com-qualquer-produto-justifique-a-sua-resposta" class="md-nav__link">
+    15) Pode se fazer análise competitiva com qualquer produto? Justifique a sua resposta
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-cite-alguns-exemplos-de-cuidados-eticos-definidos-no-codigo-de-etica-da-acm-e-da-ieee" class="md-nav__link">
+    16) Cite alguns exemplos de cuidados éticos definidos no código de ética da ACM e da IEEE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-a-resolucao-no-19696-do-conselho-nacional-de-saude-1996-que-regulamenta-as-pesquisas-cientificas-envolvendo-pessoas-em-qualquer-area-do-conhecimento-se-aplica-a-avaliacoes-realizadas-pela-equipe-de-design-justifique-a-sua-resposta" class="md-nav__link">
+    17) A resolução nº 196/96 do Conselho Nacional de Saúde (1996), que regulamenta as pesquisas científicas envolvendo pessoas, em qualquer área do conhecimento se aplica a avaliações realizadas pela equipe de design? Justifique a sua resposta?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-segundo-a-resolucao-nro-19696-do-conselho-nacional-de-saude-1996-quais-os-principios-devem-considerado-nesse-cuidado-etico-nas-pesquisas-cientificas-envolvendo-pessoas-explique-cada-um-deles" class="md-nav__link">
+    18) Segundo a resolução nro 196/96 do Conselho Nacional de Saúde (1996), quais os princípios devem considerado nesse cuidado ético nas pesquisas científicas envolvendo pessoas? Explique cada um deles
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-o-que-o-pesquisador-de-design-deve-dizer-aos-participantes-da-pesquisa-design" class="md-nav__link">
+    19) O que o pesquisador de design deve dizer aos participantes da pesquisa design?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#referencias-bibliograficas" class="md-nav__link">
+    Referências Bibliográficas
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../principios/" class="md-nav__link">
+        Princípios e Diretrizes
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prototipacao/" class="md-nav__link">
+        Prototipação
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../verificacao_validacao/" class="md-nav__link">
+        Verificação e Validação
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#parte-a" class="md-nav__link">
+    Parte A
+  </a>
+  
+    <nav class="md-nav" aria-label="Parte A">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-qual-o-objetivo-da-atividade-da-analise-situacao-atual" class="md-nav__link">
+    1) Qual o objetivo da atividade da analise situação atual?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-o-que-se-referem-os-requisitos-do-usuario" class="md-nav__link">
+    2) O que se referem os requisitos do usuário?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-qual-o-principal-erro-cometido-por-uma-equipe-de-design" class="md-nav__link">
+    3) Qual o principal erro cometido por uma equipe de design?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-qual-e-o-problema-referente-ao-termo-requisitos-e-o-que-e-importante-fazer" class="md-nav__link">
+    4) Qual é o problema referente ao termo “requisitos” e o que é importante fazer?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-quais-sao-os-quatro-pontos-principais-envolvidos-na-coleta-de-dados-definido-por-sharp-explicada-cada-um-desses-pontos" class="md-nav__link">
+    5) Quais são os quatro pontos principais envolvidos na coleta de dados definido por Sharp? Explicada cada um desses pontos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-quando-o-termo-de-consentimento-pode-nao-ser-necessario-de-ser-usado" class="md-nav__link">
+    6) Quando o termo de consentimento pode não ser necessário de ser usado?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-qual-a-atividade-mais-essencial-no-desenvolvimento-de-um-produto-de-qualidade" class="md-nav__link">
+    7) Qual a atividade mais essencial no desenvolvimento de um produto de qualidade?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-em-geral-quais-tipos-de-dados-sao-coletados-sobre-o-proprio-usuario" class="md-nav__link">
+    8) Em geral, quais tipos de dados são coletados sobre o próprio usuário?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-em-geral-quais-tipos-de-dados-sao-coletados-sobre-as-tarefas-do-usuario" class="md-nav__link">
+    9) Em geral, quais tipos de dados são coletados sobre as tarefas do usuário?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-de-quem-coletar-dados" class="md-nav__link">
+    10) De quem coletar dados?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-para-identificar-as-partes-interessadas-que-podem-fornecer-informacoes-relevantes-ao-projeto-de-um-sistema-quem-devemos-descobrir" class="md-nav__link">
+    11) Para identificar as partes interessadas que podem fornecer informações relevantes ao projeto de um sistema, quem devemos descobrir?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-caso-o-projeto-em-questao-seja-de-melhoria-ou-expansao-de-um-sistema-existente-quem-e-importante-conhecer-tambem" class="md-nav__link">
+    12) Caso o projeto em questão seja de melhoria ou expansão de um sistema existente, quem é importante conhecer também?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-por-que-e-preciso-entender-do-dominio-do-trabalho-antes-de-comecar-a-trabalhar-com-um-usuario-explique-cada-um-desses-dominios" class="md-nav__link">
+    13) Por que é preciso entender do domínio do trabalho antes de começar a trabalhar com um usuário? Explique cada um desses domínios
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-onde-buscar-dados-que-pode-ajudar-a-aprender-sobre-o-produto-explique-cada-uma-dessas-fontes" class="md-nav__link">
+    14) Onde buscar dados que pode ajudar a aprender sobre o produto? Explique cada uma dessas fontes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-pode-se-fazer-analise-competitiva-com-qualquer-produto-justifique-a-sua-resposta" class="md-nav__link">
+    15) Pode se fazer análise competitiva com qualquer produto? Justifique a sua resposta
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-cite-alguns-exemplos-de-cuidados-eticos-definidos-no-codigo-de-etica-da-acm-e-da-ieee" class="md-nav__link">
+    16) Cite alguns exemplos de cuidados éticos definidos no código de ética da ACM e da IEEE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-a-resolucao-no-19696-do-conselho-nacional-de-saude-1996-que-regulamenta-as-pesquisas-cientificas-envolvendo-pessoas-em-qualquer-area-do-conhecimento-se-aplica-a-avaliacoes-realizadas-pela-equipe-de-design-justifique-a-sua-resposta" class="md-nav__link">
+    17) A resolução nº 196/96 do Conselho Nacional de Saúde (1996), que regulamenta as pesquisas científicas envolvendo pessoas, em qualquer área do conhecimento se aplica a avaliações realizadas pela equipe de design? Justifique a sua resposta?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-segundo-a-resolucao-nro-19696-do-conselho-nacional-de-saude-1996-quais-os-principios-devem-considerado-nesse-cuidado-etico-nas-pesquisas-cientificas-envolvendo-pessoas-explique-cada-um-deles" class="md-nav__link">
+    18) Segundo a resolução nro 196/96 do Conselho Nacional de Saúde (1996), quais os princípios devem considerado nesse cuidado ético nas pesquisas científicas envolvendo pessoas? Explique cada um deles
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-o-que-o-pesquisador-de-design-deve-dizer-aos-participantes-da-pesquisa-design" class="md-nav__link">
+    19) O que o pesquisador de design deve dizer aos participantes da pesquisa design?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#referencias-bibliograficas" class="md-nav__link">
+    Referências Bibliográficas
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+
+  <h1>Análise de Requisitos</h1>
+
+<h2 id="parte-a">Parte A</h2>
+<h3 id="1-qual-o-objetivo-da-atividade-da-analise-situacao-atual">1) Qual o objetivo da atividade da analise situação atual?</h3>
+<p>O objetivo principal dessa atividade é determinar quais são as características do produto de design, que será uma proposta de intervenção, a partir das necessidades dos usuários e das oportunidades de melhoria.</p>
+<p>Fonte: [1] Pág. 132</p>
+<h3 id="2-o-que-se-referem-os-requisitos-do-usuario">2) O que se referem os requisitos do usuário?</h3>
+<p>Estes requisitos se referem aos objetivos dos usuários que devem ser apoiados pelo produto, como por exemplo funcionalidades que os usuários precisam e critérios de qualidade de IHC que tornem o uso do produto viável e confortável para o usuário.</p>
+<p>Fonte: [1] Pág. 132</p>
+<h3 id="3-qual-o-principal-erro-cometido-por-uma-equipe-de-design">3) Qual o principal erro cometido por uma equipe de design?</h3>
+<p>O principal erro cometido por uma equipe de design é realizar a análise de dados obtidos a partir de uma coleta incompleta, inválida, corrompida ou pouco confiável.</p>
+<p>Fonte: [1] Pág. 132</p>
+<h3 id="4-qual-e-o-problema-referente-ao-termo-requisitos-e-o-que-e-importante-fazer">4) Qual é o problema referente ao termo “requisitos” e o que é importante fazer?</h3>
+<p>O termo requisitos muitas vezes é usado indiscriminadamente para indicar funcionalidades, atributos, restrições e expectativas, além de, nem sempre, fazer uma priorização das informações. É importante que exista uma distinção entre informações obrigatórias e informações desejáveis. O primeiro tipo de informação geralmente é oriundo das regras de negócio, definições de processos e normas ou restrições tecnológicas, enquanto o segundo representa informações negociáveis, adaptáveis ou descartáveis.</p>
+<p>Fonte: [1] Págs. 132 e 133</p>
+<h3 id="5-quais-sao-os-quatro-pontos-principais-envolvidos-na-coleta-de-dados-definido-por-sharp-explicada-cada-um-desses-pontos">5) Quais são os quatro pontos principais envolvidos na coleta de dados definido por Sharp? Explicada cada um desses pontos</h3>
+<p>Os pontos destacados são: definição dos objetivos da coleta de dados, relacionamento com participantes, triangulação e estudos-piloto.</p>
+<p>O primeiro ponto consiste na identificação dos motivos para a coleta de dados. Os <strong>objetivos</strong> da coleta de dados determinam quais dados serão coletados e as técnicas utilizadas. O segundo, diz respeito à manutenção de uma comunicação boa e transparente com o usuário, para que este possa consentir com a coleta de dados, geralmente por meio da assinatura de um formulário de consentimento. A <strong>triangulação</strong> é a estratégia de intercalar mais do que uma técnica de coleta ou análise de dados. O <strong>estudo piloto</strong> é uma pequena prévia do estudo principal, que é executado com a intenção de verificar se o estudo é viável e permitirá coletar os dados desejados.</p>
+<p>Fonte: [1] Pág. 133</p>
+<h3 id="6-quando-o-termo-de-consentimento-pode-nao-ser-necessario-de-ser-usado">6) Quando o termo de consentimento pode não ser necessário de ser usado?</h3>
+<p>Quando já existe um contrato envolvendo os participantes e as pessoas que coletam os dados.</p>
+<p>Fonte: [1] Pág. 133</p>
+<h3 id="7-qual-a-atividade-mais-essencial-no-desenvolvimento-de-um-produto-de-qualidade">7) Qual a atividade mais essencial no desenvolvimento de um produto de qualidade?</h3>
+<p>A atividade mais essencial no desenvolvimento de um produto de qualidade é entender quem são os usuários deste produto e quais são suas necessidades.</p>
+<p>Fonte: [1] Pág. 134</p>
+<h3 id="8-em-geral-quais-tipos-de-dados-sao-coletados-sobre-o-proprio-usuario">8) Em geral, quais tipos de dados são coletados sobre o próprio usuário?</h3>
+<ul>
+<li>Dados demográficos: idade, sexo, status socioeconômico;</li>
+<li>Experiência no cargo que ocupa: cargo, tempo na empresa, responsabilidades, plano de carreira;</li>
+<li>Informações sobre a empresa: tamanho, área de atuação;</li>
+<li>Educação: grau de instrução, área de formação;</li>
+<li>Experiência com computadores: habilidade com computadores, tempo de experiência;</li>
+<li>Experiência com um produto específico ou ferramentas semelhantes: experiência com produtos específicos ou concorrentes no mesmo domínio;</li>
+<li>Tecnologia disponível: <em>hardware</em>, software;</li>
+<li>Treinamento: como o usuário gosta de aprender;</li>
+<li>Atitudes e valores: o usuário costuma assumir riscos? Realiza tarefas sempre da mesma maneira?;</li>
+<li>Conhecimento do domínio: o que o usuário sabe sobre o assunto?;</li>
+<li>Objetivos: quais são os principais objetivos dos usuário?;</li>
+<li>Tarefas: elencar, categorizar e priorizar as tarefas do usuário que precisam ser apoiadas;</li>
+<li>Gravidade dos erros: consequências dos possíveis erros dos usuários;</li>
+<li>Motivação para o trabalho: grau de motivação do usuário com o trabalho;</li>
+<li>Idiomas e jargões: quais idiomas o usuário conhece? Existe um jargão profissional particular?</li>
+</ul>
+<p>Fonte: [1] Págs. 134 e 135</p>
+<h3 id="9-em-geral-quais-tipos-de-dados-sao-coletados-sobre-as-tarefas-do-usuario">9) Em geral, quais tipos de dados são coletados sobre as tarefas do usuário?</h3>
+<p>São coletadas informações como quais tarefas são primárias ou secundárias, há quanto tempo o usuário realiza as tarefas, com que frequência elas são executadas, se as tarefas são inovadoras e qual nível de experiência o usuário possui com tarefas semelhantes.</p>
+<p>Fonte: [1] Pág. 135</p>
+<h3 id="10-de-quem-coletar-dados">10) De quem coletar dados?</h3>
+<p>É essencial coletar os dados de fontes confiáveis, relevantes e representativas dos usuários e do seu trabalho.</p>
+<p>Fonte: [1] Pág. 135</p>
+<h3 id="11-para-identificar-as-partes-interessadas-que-podem-fornecer-informacoes-relevantes-ao-projeto-de-um-sistema-quem-devemos-descobrir">11) Para identificar as partes interessadas que podem fornecer informações relevantes ao projeto de um sistema, quem devemos descobrir?</h3>
+<p>É essencial descobrir quem utilizará o sistema, quem será afetado por ele, quem é responsável por decidir quais são as funcionalidades do sistema e quem definiu os processos a serem apoiados pelo sistema.</p>
+<p>Fonte: [1] Pág. 136</p>
+<h3 id="12-caso-o-projeto-em-questao-seja-de-melhoria-ou-expansao-de-um-sistema-existente-quem-e-importante-conhecer-tambem">12) Caso o projeto em questão seja de melhoria ou expansão de um sistema existente, quem é importante conhecer também?</h3>
+<p>É essencial conhecer quem utiliza o sistema atualmente, quem passará a utilizá-lo, quem são os usuários satisfeitos e insatisfeitos com o sistema, quem o concebeu, quem preparou sua documentação, quem realiza os treinamentos com os usuários, quem faz a manutenção do sistema e quem o projetou.</p>
+<p>Fonte: [1] Pág. 136</p>
+<h3 id="13-por-que-e-preciso-entender-do-dominio-do-trabalho-antes-de-comecar-a-trabalhar-com-um-usuario-explique-cada-um-desses-dominios">13) Por que é preciso entender do domínio do trabalho antes de começar a trabalhar com um usuário? Explique cada um desses domínios</h3>
+<p>Quando o produto já é conhecido, é necessário identificar necessidades que ainda não foram reconhecidas.Quando se trata de uma melhoria no produto, os desafios são entender as motivações por trás das solicitações de melhorias, para projetar uma solução que satisfaça as necessidades, preservando a prática de trabalho e a integridade do design do sistema. Nesse caso, é preciso entender o domínio do trabalho para entender de que maneira a mudança afeta o trabalho como um todo.</p>
+<p>Quando se trata de um novo domínio de trabalho, é importante investigar qual trabalho será substituído pelo novo produto e identificar como este é estruturado, para facilitar a transição entre os produtos.</p>
+<p>Fonte: [1] Págs. 136 e 137</p>
+<h3 id="14-onde-buscar-dados-que-pode-ajudar-a-aprender-sobre-o-produto-explique-cada-uma-dessas-fontes">14) Onde buscar dados que pode ajudar a aprender sobre o produto? Explique cada uma dessas fontes</h3>
+<p>Esses dados podem ser obtidos por meio de <em>feedback</em> dos usuários, arquivos de log, análise competitiva e pesquisa em geral.</p>
+<p>Fonte: [1] Pág. 137</p>
+<h3 id="15-pode-se-fazer-analise-competitiva-com-qualquer-produto-justifique-a-sua-resposta">15) Pode se fazer análise competitiva com qualquer produto? Justifique a sua resposta</h3>
+<p>A análise competitiva pode ser feita com os produtos que são competidores diretos ou os que substituem ou complementam o produto sendo projetado.</p>
+<p>Fonte: [1] Pág. 137</p>
+<h3 id="16-cite-alguns-exemplos-de-cuidados-eticos-definidos-no-codigo-de-etica-da-acm-e-da-ieee">16) Cite alguns exemplos de cuidados éticos definidos no código de ética da ACM e da IEEE</h3>
+<p>O código de ética da ACM preza por evitar causar danos ou consequências negativas aos outros, tais como perda de informação, perda de bens, danos a propriedades e impactos ambientais. O código da IEEE, também preza por evitar prejudicar ou causar dano a outras pessoas, seus bens, reputação ou emprego.</p>
+<p>Fonte: [1] Pág. 139</p>
+<h3 id="17-a-resolucao-no-19696-do-conselho-nacional-de-saude-1996-que-regulamenta-as-pesquisas-cientificas-envolvendo-pessoas-em-qualquer-area-do-conhecimento-se-aplica-a-avaliacoes-realizadas-pela-equipe-de-design-justifique-a-sua-resposta">17) A resolução nº 196/96 do Conselho Nacional de Saúde (1996), que regulamenta as pesquisas científicas envolvendo pessoas, em qualquer área do conhecimento se aplica a avaliações realizadas pela equipe de design? Justifique a sua resposta?</h3>
+<p>Não, pois essa resolução não se aplica à execução de métodos de avaliação com objetivos técnicos, ela aplica-se às pesquisas científicas envolvendo pessoas.</p>
+<p>Fonte: [1] Pág. 139</p>
+<h3 id="18-segundo-a-resolucao-nro-19696-do-conselho-nacional-de-saude-1996-quais-os-principios-devem-considerado-nesse-cuidado-etico-nas-pesquisas-cientificas-envolvendo-pessoas-explique-cada-um-deles">18) Segundo a resolução nro 196/96 do Conselho Nacional de Saúde (1996), quais os princípios devem considerado nesse cuidado ético nas pesquisas científicas envolvendo pessoas? Explique cada um deles</h3>
+<p>Princípios da autonomia, beneficência, não maleficência e da justiça e equidade. A autonomia diz respeito ao consentimento livre e esclarecido dos indivíduos envolvidos. A beneficência está relacionada ao ponderamento de riscos e benefícios, prezando-se pela maior quantidade de benefícios e menor de riscos. A não maleficência garante que danos previsíveis relacionados à pesquisa sejam evitados. O último princípio visa garantir a relevância social da pesquisa.</p>
+<p>Fonte: [1] Pág. 139</p>
+<h3 id="19-o-que-o-pesquisador-de-design-deve-dizer-aos-participantes-da-pesquisa-design">19) O que o pesquisador de design deve dizer aos participantes da pesquisa design?</h3>
+<p>O pesquisador deve:</p>
+<ul>
+<li>explicar os objetivos da pesquisa;</li>
+<li>dizer exatamente como será a participação deles;</li>
+<li>deixar claro o que ocorrerá durante a coleta de dados, o tempo aproximado da coleta, os tipos de dados coletados e como estes serão analisados;</li>
+<li>garantir a confidencialidade e a privacidade dos dados brutos coletados;</li>
+<li>garantir o anonimato dos participantes, preservação das imagens e utilização cuidadosa das informações coletadas;</li>
+<li>solicitar permissão para gravar a voz ou imagem antes de iniciar uma gravação;</li>
+<li>solicitar o consentimento livre e esclarecido dos participantes;</li>
+<li>fornecer uma situação confortável para os participantes;</li>
+<li>prover ao participante o direito e a liberdade de se recusar a participar da coleta em qualquer etapa;</li>
+</ul>
+<p>Fonte: [1] Págs. 139 a 141</p>
+<h3 id="referencias-bibliograficas">Referências Bibliográficas</h3>
+<p>[1] SIMONE DINIZ JUNQUEIRO BARBOSA, BRUNO SANTANA DA SILVA, Interação Humano-Computador, 1ª Edição, Editora Campus, 2010.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      2022 Nicolas Souza
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.12658920.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.5cf534bf.min.js"></script>
+      
+    
+  </body>
+</html>

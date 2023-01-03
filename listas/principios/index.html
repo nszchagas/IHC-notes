@@ -1,0 +1,908 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../analise_de_requisitos/">
+      
+      
+        <link rel="next" href="../prototipacao/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.1">
+    
+    
+      
+        <title>Princípios e Diretrizes - IHC - notes</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.3bd4f189.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#principios-e-diretrizes" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="IHC - notes" class="md-header__button md-logo" aria-label="IHC - notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            IHC - notes
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Princípios e Diretrizes
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent=""  aria-label="Dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent=""  aria-label="Light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/nszchagas/IHC-notes" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    IHC-notes
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="IHC - notes" class="md-nav__button md-logo" aria-label="IHC - notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    IHC - notes
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/nszchagas/IHC-notes" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    IHC-notes
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise_de_requisitos/" class="md-nav__link">
+        Análise de Requisitos
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Princípios e Diretrizes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Princípios e Diretrizes
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lista-de-exercicios" class="md-nav__link">
+    Lista de Exercícios
+  </a>
+  
+    <nav class="md-nav" aria-label="Lista de Exercícios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-o-que-sao-principios-diretrizes-guidelines-e-padroes-na-literatura-de-ihc" class="md-nav__link">
+    1. O que são princípios, diretrizes (guidelines) e padrões na literatura de IHC?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-cite-alguns-ambientes-de-trabalho-para-onde-as-diretrizes-sao-desenvolvidas" class="md-nav__link">
+    2. Cite alguns ambientes de trabalho para onde as diretrizes são desenvolvidas?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-o-que-e-uma-lista-de-verificacao-checklists" class="md-nav__link">
+    3. O que é uma lista de verificação (checklists)?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-o-que-e-ergolist" class="md-nav__link">
+    4. O que é ErgoList?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-quais-sao-os-topicos-que-os-principios-e-diretrizes-utilizados-em-ihc-geralmente-abordam-explique-cada-um-deles" class="md-nav__link">
+    5. Quais são os tópicos que os princípios e diretrizes utilizados em IHC geralmente abordam? Explique cada um deles
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-qual-opcao-a-ou-b-da-figura-a-seguir-deve-ser-construido-em-um-sistema-justifique-a-sua-resposta-baseada-em-topico-de-principios-e-diretrizes-de-ihc" class="md-nav__link">
+    6. Qual opção, (a) ou (b), da figura a seguir deve ser construído em um sistema? Justifique a sua resposta baseada em tópico de princípios e diretrizes de IHC
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-como-podemos-simplificar-a-estrutura-das-tarefas" class="md-nav__link">
+    7. Como podemos simplificar a estrutura das tarefas?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-por-que-se-deve-manter-o-usuario-no-controle" class="md-nav__link">
+    8. Por que se deve manter o usuário no controle?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-quantos-caminhos-os-usuarios-devem-poder-fazer-para-realizar-uma-atividade-de-um-exemplo-de-caminhos-para-realizar-uma-atividade" class="md-nav__link">
+    9. Quantos caminhos os usuários devem poder fazer para realizar uma atividade? Dê um exemplo de caminho(s) para realizar uma atividade
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-explique-todos-os-elementos-opcoes-da-figura-seguir-baseado-no-equilibrio-entre-controle-e-liberdade-do-usuario" class="md-nav__link">
+    10. Explique todos os elementos (opções) da figura seguir baseado no Equilíbrio entre Controle e Liberdade do Usuário
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-entre-as-duas-telas-seguir-qual-deve-ser-implementada-em-um-sistema-justifique-a-sua-resposta-baseada-em-topico-de-principios-e-diretrizes-de-ihc-qual-a-vantagem-de-oferecer-esse-topico-ao-usuario" class="md-nav__link">
+    11. Entre as duas telas seguir, qual deve ser implementada em um sistema? Justifique a sua resposta baseada em tópico de princípios e diretrizes de IHC. Qual a vantagem de oferecer esse tópico ao usuário?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-o-que-se-pode-fazer-para-facilitar-o-aprendizado-e-uso-de-um-sistema" class="md-nav__link">
+    12. O que se pode fazer para facilitar o aprendizado e uso de um sistema?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-o-que-devemos-padronizar-em-um-sistema-cite-exemplos" class="md-nav__link">
+    13. O que devemos padronizar em um sistema? Cite exemplos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-cite-exemplos-de-como-o-sistema-pode-promover-a-eficiencia-do-usuario-segundo-toganzzini-cooper-nielsen-e-shneiderman" class="md-nav__link">
+    14. Cite exemplos de como o sistema pode promover a eficiência do usuário segundo Toganzzini, Cooper, Nielsen e Shneiderman?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-o-que-antecipacao-em-um-sistema" class="md-nav__link">
+    15. O que antecipação em um sistema?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-verifique-se-cada-alternativa-apresentada-na-figura-a-seguir-e-eficiente-neutra-ou-induz-uma-determinada-opcao" class="md-nav__link">
+    16. Verifique se cada alternativa apresentada na figura a seguir é eficiente, neutra ou induz uma determinada opção?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-como-projetar-a-visibilidade-e-reconhecimento-em-um-sistema-cite-exemplos" class="md-nav__link">
+    17. Como projetar a visibilidade e reconhecimento em um sistema? Cite exemplos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-em-relacao-ao-tempo-de-espera-como-tognazzini-sugere-que-o-sistema-deve-fornecer-feedback-ao-usuario" class="md-nav__link">
+    18. Em relação ao tempo de espera, como Tognazzini sugere que o sistema deve fornecer feedback ao usuário?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-o-que-significa-projeto-estetico-e-minimalista-de-nielsen" class="md-nav__link">
+    19. O que significa “projeto estético e minimalista” de Nielsen?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#20-o-que-significa-projetar-para-o-erro-de-nielsen-como-fazer-isso" class="md-nav__link">
+    20. O que significa “projetar para o erro” de Nielsen? Como fazer isso?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#21-qual-das-duas-telas-a-ou-b-a-seguir-deve-ser-implementada-em-um-sistema-justifique-a-sua-resposta" class="md-nav__link">
+    21. Qual das duas telas, (a) ou (b), a seguir deve ser implementada em um sistema? Justifique a sua resposta
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-o-que-e-padroes-de-design-de-ihc-cite-um-exemplo" class="md-nav__link">
+    22. O que é Padrões de Design de IHC? Cite um exemplo
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bibliografia" class="md-nav__link">
+    Bibliografia
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prototipacao/" class="md-nav__link">
+        Prototipação
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../verificacao_validacao/" class="md-nav__link">
+        Verificação e Validação
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lista-de-exercicios" class="md-nav__link">
+    Lista de Exercícios
+  </a>
+  
+    <nav class="md-nav" aria-label="Lista de Exercícios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-o-que-sao-principios-diretrizes-guidelines-e-padroes-na-literatura-de-ihc" class="md-nav__link">
+    1. O que são princípios, diretrizes (guidelines) e padrões na literatura de IHC?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-cite-alguns-ambientes-de-trabalho-para-onde-as-diretrizes-sao-desenvolvidas" class="md-nav__link">
+    2. Cite alguns ambientes de trabalho para onde as diretrizes são desenvolvidas?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-o-que-e-uma-lista-de-verificacao-checklists" class="md-nav__link">
+    3. O que é uma lista de verificação (checklists)?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-o-que-e-ergolist" class="md-nav__link">
+    4. O que é ErgoList?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-quais-sao-os-topicos-que-os-principios-e-diretrizes-utilizados-em-ihc-geralmente-abordam-explique-cada-um-deles" class="md-nav__link">
+    5. Quais são os tópicos que os princípios e diretrizes utilizados em IHC geralmente abordam? Explique cada um deles
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-qual-opcao-a-ou-b-da-figura-a-seguir-deve-ser-construido-em-um-sistema-justifique-a-sua-resposta-baseada-em-topico-de-principios-e-diretrizes-de-ihc" class="md-nav__link">
+    6. Qual opção, (a) ou (b), da figura a seguir deve ser construído em um sistema? Justifique a sua resposta baseada em tópico de princípios e diretrizes de IHC
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-como-podemos-simplificar-a-estrutura-das-tarefas" class="md-nav__link">
+    7. Como podemos simplificar a estrutura das tarefas?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-por-que-se-deve-manter-o-usuario-no-controle" class="md-nav__link">
+    8. Por que se deve manter o usuário no controle?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-quantos-caminhos-os-usuarios-devem-poder-fazer-para-realizar-uma-atividade-de-um-exemplo-de-caminhos-para-realizar-uma-atividade" class="md-nav__link">
+    9. Quantos caminhos os usuários devem poder fazer para realizar uma atividade? Dê um exemplo de caminho(s) para realizar uma atividade
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-explique-todos-os-elementos-opcoes-da-figura-seguir-baseado-no-equilibrio-entre-controle-e-liberdade-do-usuario" class="md-nav__link">
+    10. Explique todos os elementos (opções) da figura seguir baseado no Equilíbrio entre Controle e Liberdade do Usuário
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-entre-as-duas-telas-seguir-qual-deve-ser-implementada-em-um-sistema-justifique-a-sua-resposta-baseada-em-topico-de-principios-e-diretrizes-de-ihc-qual-a-vantagem-de-oferecer-esse-topico-ao-usuario" class="md-nav__link">
+    11. Entre as duas telas seguir, qual deve ser implementada em um sistema? Justifique a sua resposta baseada em tópico de princípios e diretrizes de IHC. Qual a vantagem de oferecer esse tópico ao usuário?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-o-que-se-pode-fazer-para-facilitar-o-aprendizado-e-uso-de-um-sistema" class="md-nav__link">
+    12. O que se pode fazer para facilitar o aprendizado e uso de um sistema?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-o-que-devemos-padronizar-em-um-sistema-cite-exemplos" class="md-nav__link">
+    13. O que devemos padronizar em um sistema? Cite exemplos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-cite-exemplos-de-como-o-sistema-pode-promover-a-eficiencia-do-usuario-segundo-toganzzini-cooper-nielsen-e-shneiderman" class="md-nav__link">
+    14. Cite exemplos de como o sistema pode promover a eficiência do usuário segundo Toganzzini, Cooper, Nielsen e Shneiderman?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-o-que-antecipacao-em-um-sistema" class="md-nav__link">
+    15. O que antecipação em um sistema?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-verifique-se-cada-alternativa-apresentada-na-figura-a-seguir-e-eficiente-neutra-ou-induz-uma-determinada-opcao" class="md-nav__link">
+    16. Verifique se cada alternativa apresentada na figura a seguir é eficiente, neutra ou induz uma determinada opção?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-como-projetar-a-visibilidade-e-reconhecimento-em-um-sistema-cite-exemplos" class="md-nav__link">
+    17. Como projetar a visibilidade e reconhecimento em um sistema? Cite exemplos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-em-relacao-ao-tempo-de-espera-como-tognazzini-sugere-que-o-sistema-deve-fornecer-feedback-ao-usuario" class="md-nav__link">
+    18. Em relação ao tempo de espera, como Tognazzini sugere que o sistema deve fornecer feedback ao usuário?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-o-que-significa-projeto-estetico-e-minimalista-de-nielsen" class="md-nav__link">
+    19. O que significa “projeto estético e minimalista” de Nielsen?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#20-o-que-significa-projetar-para-o-erro-de-nielsen-como-fazer-isso" class="md-nav__link">
+    20. O que significa “projetar para o erro” de Nielsen? Como fazer isso?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#21-qual-das-duas-telas-a-ou-b-a-seguir-deve-ser-implementada-em-um-sistema-justifique-a-sua-resposta" class="md-nav__link">
+    21. Qual das duas telas, (a) ou (b), a seguir deve ser implementada em um sistema? Justifique a sua resposta
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-o-que-e-padroes-de-design-de-ihc-cite-um-exemplo" class="md-nav__link">
+    22. O que é Padrões de Design de IHC? Cite um exemplo
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bibliografia" class="md-nav__link">
+    Bibliografia
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+
+<h1 id="principios-e-diretrizes">Princípios e Diretrizes</h1>
+<h2 id="lista-de-exercicios">Lista de Exercícios</h2>
+<h3 id="1-o-que-sao-principios-diretrizes-guidelines-e-padroes-na-literatura-de-ihc">1. O que são princípios, diretrizes (guidelines) e padrões na literatura de IHC?</h3>
+<p>Princípios representam objetivos gerais e de alto nível, diretrizes são regras gerais que podem ser observadas na prática e padrões são soluções específicas a certos contextos bem delimitados, envolvendo certos usuários desempenhando determinadas tarefas.
+Fonte: [1]</p>
+<h3 id="2-cite-alguns-ambientes-de-trabalho-para-onde-as-diretrizes-sao-desenvolvidas">2. Cite alguns ambientes de trabalho para onde as diretrizes são desenvolvidas?</h3>
+<p>Algumas diretrizes são desenvolvidas especificamente para certos ambientes de trabalho, como o Windows, MacOS e o Gnome.</p>
+<p>Fonte: [1]</p>
+<h3 id="3-o-que-e-uma-lista-de-verificacao-checklists">3. O que é uma lista de verificação (checklists)?</h3>
+<p>São listas de verificações utilizadas por inspetores para examinar uma interface e sua conformidade em relação a um conjunto de diretrizes.</p>
+<p>Fonte: [1]</p>
+<h3 id="4-o-que-e-ergolist">4. O que é ErgoList?</h3>
+<p>A ErgoList é uma lista brasileira de verificações (checklist) desenvolvida com base em princípios de ergonomia.</p>
+<p>Fonte: [1]</p>
+<h3 id="5-quais-sao-os-topicos-que-os-principios-e-diretrizes-utilizados-em-ihc-geralmente-abordam-explique-cada-um-deles">5. Quais são os tópicos que os princípios e diretrizes utilizados em IHC geralmente abordam? Explique cada um deles</h3>
+<p>Os princípios e diretrizes englobados são:</p>
+<ul>
+<li><strong>Correspondência com as expectativas dos usuários:</strong> o sistema deve estar de acordo com o que o usuário espera, principalmente de outros sistemas semelhantes e interações na vida física.</li>
+<li><strong>Simplicidade nas estruturas das tarefas:</strong> não deve ser difícil e trabalhoso realizar tarefas, e tarefas semelhantes devem ter caminhos semelhantes.</li>
+<li><strong>Equilíbrio entre controle e liberdade do usuário:</strong> o usuário deve estar em controle do sistema, podendo refazer suas ações e sair das interações a qualquer momento, mas não deve ter liberdade suficiente para cometer erros irreversíveis.</li>
+<li><strong>Consistência e padronização:</strong> a interface deve apresentar uma padronização de ações e respostas, para que o usuário possa encontrar facilmente as funcionalidades desejadas.</li>
+<li><strong>Promoção da eficiência do usuário:</strong> o usuário deve ser mantido em constante atividade ao utilizar o sistema, e recursos como atalhos e realização de tarefas demoradas em background pode aumentar a eficiência do usuário.</li>
+<li><strong>Antecipação das necessidades do usuário:</strong> o sistema deve prever os passos do usuário para otimizar a sua utilização.</li>
+<li><strong>Visibilidade e reconhecimento:</strong> o usuário deve ser capaz de ver o estado do sistema durante toda sua utilização, e também deve ser capaz de se orientar no sistema por reconhecimento em detrimento da memorização.</li>
+<li><strong>Conteúdo relevante e expressão adequada:</strong> as informações presentes nas interações devem ser concisas e consistentes com a interação, o excesso de informação pode diminuir a relevância relativa dos elementos que deveriam ter destaque.</li>
+<li><strong>Projeto para erros:</strong> os erros que podem ser cometidos durante o uso do sistema deve ser previsto pelo designer e o projeto deve minimizar essas possibilidades, provendo opções de recuperação para o caso em que estes ocorram.</li>
+</ul>
+<p>Fonte: [1]</p>
+<h3 id="6-qual-opcao-a-ou-b-da-figura-a-seguir-deve-ser-construido-em-um-sistema-justifique-a-sua-resposta-baseada-em-topico-de-principios-e-diretrizes-de-ihc">6. Qual opção, (a) ou (b), da figura a seguir deve ser construído em um sistema? Justifique a sua resposta baseada em tópico de princípios e diretrizes de IHC</h3>
+<p><img alt="" src="../assets/2022-12-01-10-19-54.png" /></p>
+<p>A primeira opção (a) está mais próxima da realidade do usuário ao frequentar uma loja física, adequando-se melhor a correspondência com as expectativas do usuário. Ao entrar em uma loja física, o cliente pode buscar por produtos, escolher um e só então efetuar um cadastro para comprá-lo, efetuar um cadastro antes da busca não é um fluxo natural e por isso não corresponde às expectativas do usuário.</p>
+<p>Fonte: [1]</p>
+<h3 id="7-como-podemos-simplificar-a-estrutura-das-tarefas">7. Como podemos simplificar a estrutura das tarefas?</h3>
+<p>É possível simplificar a estrutura da tarefa fornecendo diversas formas de apoio para que os usuários possa aprender a realizá-la, melhorando o <em>feedback</em> visual durante a realização dela e, consequentemente, aumentando o controle do usuário sobre a tarefa, automatizando uma de suas partes ou modificando-a por completo, alterando a sua natureza.</p>
+<p>Fonte: [1]</p>
+<h3 id="8-por-que-se-deve-manter-o-usuario-no-controle">8. Por que se deve manter o usuário no controle?</h3>
+<p>Quando está no controle, o usuário aprende rapidamente e ganha mais confiança ao utilizar o sistema. Esse controle deve ser fornecido com um equilíbrio, pois seu excesso pode desorientar os usuários, como por exemplo com o excesso de opções.</p>
+<p>Fonte: [1]</p>
+<h3 id="9-quantos-caminhos-os-usuarios-devem-poder-fazer-para-realizar-uma-atividade-de-um-exemplo-de-caminhos-para-realizar-uma-atividade">9. Quantos caminhos os usuários devem poder fazer para realizar uma atividade? Dê um exemplo de caminho(s) para realizar uma atividade</h3>
+<p>É importante fornecer ao usuário opções de caminho, um deles deve ser o preferencial, e além destes e suas variações, devem ser oferecidas opções de saída clara e rápida. A saída não pode ser o caminho preferencial, e optar por ela deve resultar em um caminho com alguma resistência, para prevenir falhas. É importante que o usuário possua uma controle local das interações durante uma atividade, sendo o iniciador da interação e podendo cancelar, desfazer e refazer suas ações.</p>
+<p>Caminhos possíveis na plataforma Lichess para iniciar uma partida de xadrez:</p>
+<p><strong>1º Caminho:</strong> para iniciar uma partida o usuário deve clicar no botão "Iniciar uma Partida" na tela inicial, o que acarretará na abertura de uma tela de configuração, cuja saída é indicada por um "x" no topo da janela (Figura 1), após configurar a partida, o usuário deve clicar em uma das peças de xadrez para escolher a cor das suas peças o que o levará para a tela de jogo (Figura 2), onde a saída não está em destaque, pois encontra-se no menu lateral abaixo da mensagem informativa "Você joga com as peças pretas".</p>
+<p><img alt="" src="../assets/principios_14_20_07.png" /></p>
+<p>Figura 1: Configuração de partida na plataforma Lichess. (Fonte: lichess.org)</p>
+<p><img alt="" src="../assets/principios_14_21_40.png" /></p>
+<p>Figura 2: Tela de jogo. (Fonte: lichess.org)</p>
+<p><strong>2º Caminho:</strong> para iniciar uma partida o usuário deve acessar o menu "jogar" e escolher o modo de jogo, caso opte por criar uma partida, o que também acarretará na abertura da tela de configuração e o fluxo seguirá exatamente como no primeiro caminho.</p>
+<p>No exemplo da plataforma Lichess não constam as opções de desfazer e refazer as interações referentes à configuração da partida. O ideal seria incluir uma tela de confirmação com as opções selecionadas, da qual o usuário poderia voltar para a tela anterior para refazer ou alterar as configurações feitas e até mesmo cancelar a solicitação para iniciar partida.</p>
+<p>Fonte: [1]</p>
+<h3 id="10-explique-todos-os-elementos-opcoes-da-figura-seguir-baseado-no-equilibrio-entre-controle-e-liberdade-do-usuario">10. Explique todos os elementos (opções) da figura seguir baseado no Equilíbrio entre Controle e Liberdade do Usuário</h3>
+<p><img alt="" src="../assets/2022-12-01-10-20-11.png" /></p>
+<p>A opção voltar fornece ao usuário o controle caso deseje alterar alguma opção antes de prosseguir, ou seja, fornece a opção de refazer suas ações. A opção cancelar fornece uma saída clara e rápida ao usuário. A opção concluir termina a tarefa de uma maneira diferente da forma preferencial, dando liberdade ao usuário. A opção avançar compõe o fluxo padrão da atividade e por este motivo encontra-se destacada.</p>
+<h3 id="11-entre-as-duas-telas-seguir-qual-deve-ser-implementada-em-um-sistema-justifique-a-sua-resposta-baseada-em-topico-de-principios-e-diretrizes-de-ihc-qual-a-vantagem-de-oferecer-esse-topico-ao-usuario">11. Entre as duas telas seguir, qual deve ser implementada em um sistema? Justifique a sua resposta baseada em tópico de princípios e diretrizes de IHC. Qual a vantagem de oferecer esse tópico ao usuário?</h3>
+<p><img alt="" src="../assets/2022-12-01-10-20-25.png" /></p>
+<p>A segunda tela, com a opção de cancelar. A diretriz a ser seguida é a de liberdade do usuário, pode ocorrer algum erro durante a busca solicitada que cause uma grande demora ou, ainda, o usuário pode perceber que cometeu algum equívoco na solicitação e deseje cancelar a busca.</p>
+<h3 id="12-o-que-se-pode-fazer-para-facilitar-o-aprendizado-e-uso-de-um-sistema">12. O que se pode fazer para facilitar o aprendizado e uso de um sistema?</h3>
+<p>Fornecer caminhos alternativos para completar tarefas facilita o aprendizado de uso de um sistema para usuários que preferem aprender na prática. A consistência da interface também contribui para facilitar o aprendizado.</p>
+<p>Fonte: [1]</p>
+<h3 id="13-o-que-devemos-padronizar-em-um-sistema-cite-exemplos">13. O que devemos padronizar em um sistema? Cite exemplos</h3>
+<p>Ações, resultados das ações, o <em>layout</em> dos diálogos e as visualizações de informação. Por exemplo, ações semelhantes devem seguir caminhos semelhantes, ações relacionadas ao arquivo no editor VsCode encontram-se todas no menu "Arquivo", então caso o usuário deseje efetuar alguma operação com arquivo, seja sua abertura, salvamento ou criação de um novo arquivo, seguirá o mesmo caminho. Os resultados dessas ações também devem ser padronizados, ou seja, se a criação de um arquivo resulta na abertura de uma janela de diálogo confirmando a escolha, espera-se que a operação de abertura de arquivo siga o mesmo padrão.</p>
+<p>Fonte: [1]</p>
+<h3 id="14-cite-exemplos-de-como-o-sistema-pode-promover-a-eficiencia-do-usuario-segundo-toganzzini-cooper-nielsen-e-shneiderman">14. Cite exemplos de como o sistema pode promover a eficiência do usuário segundo Toganzzini, Cooper, Nielsen e Shneiderman?</h3>
+<p>É importante manter o usuário ocupado, pois a espera pelo resultado de algum processamento por parte do computador pode frustrar ou entediar o usuário, causando perda de dinheiro e produtividade. Para isso, é recomendável deixar processamentos demorados ocorrendo em <em>background</em> enquanto o usuário continua executando suas atividades. O sistema deve ser sensível ao que o usuário está fazendo e evitar que ocorram interrupções durante a realização de tarefas, além disso o trabalho do usuário deve ser protegido, os usuários jamais devem perder o trabalho realizado por falhas como falta de rede ou energia. O sistema deve gravar as opções do usuário, ou seja, o usuário não deve ter que responder as mesmas perguntas várias vezes, como por exemplo o tema da interface escolhido na plataforma Teams. O usuário deve ser capaz de recuperar o ponto onde parou o sistema ao utilizá-lo em outra máquina. A utilização de atalhos e fornecimento de opções padrão para ações frequentes também promove a eficiência do usuário.</p>
+<p>Fonte: [1]</p>
+<h3 id="15-o-que-antecipacao-em-um-sistema">15. O que antecipação em um sistema?</h3>
+<p>O sistema deve tomar a iniciativa e fornecer informações adicionais úteis, essa iniciativa baseia-se em uma previsão das necessidades do usuário. Caso o sistema não esteja processando nenhuma informação, ele pode adiantar operações que o usuário provavelmente realizará em seguida.</p>
+<p>Fonte: [1]</p>
+<h3 id="16-verifique-se-cada-alternativa-apresentada-na-figura-a-seguir-e-eficiente-neutra-ou-induz-uma-determinada-opcao">16. Verifique se cada alternativa apresentada na figura a seguir é eficiente, neutra ou induz uma determinada opção?</h3>
+<p><img alt="" src="../assets/principios_15_35_32.png" /></p>
+<p>Dentre as opções do lado esquerdo todas são eficientes, sendo que a primeira é neutra, a segunda induz a ação de não receber a <em>newsletter</em>, a terceira é neutra e a última induz a ação de receber a <em>newsletter</em>. Dentre as opções do lado direito, a primeira é eficiente e induz a ação de receber a <em>newsletter</em>, a segunda é eficiente e não induz a ação e a última é ineficiente e não induz ação.</p>
+<h3 id="17-como-projetar-a-visibilidade-e-reconhecimento-em-um-sistema-cite-exemplos">17. Como projetar a visibilidade e reconhecimento em um sistema? Cite exemplos</h3>
+<p>A interface deve conter opções que estejam alinhadas com as intenções do usuário. A interface não deve exibir elementos que não façam sentido naquele contexto ou que não estejam disponíveis no momento da interação. Após a execução de uma ação, a interface deve fornecer indicações do estado do sistema ao usuário, de forma que este perceba as consequências da ação realizada e possa interpretá-las. Por exemplo, um ícone de notificações com um contador de mensagens não lidas fornece a visualização do estado do sistema de forma simples e compacta. Outro exemplo é o fornecimento de mensagens de <em>feedback</em> após envio de formulários, apresentação da tela de carregamento durante requisições.</p>
+<p>Fonte: [1]</p>
+<h3 id="18-em-relacao-ao-tempo-de-espera-como-tognazzini-sugere-que-o-sistema-deve-fornecer-feedback-ao-usuario">18. Em relação ao tempo de espera, como Tognazzini sugere que o sistema deve fornecer feedback ao usuário?</h3>
+<p>A resposta do sistema deve ser adequada e no tempo correto. O tempo ideal para o feedback visual ou sonoro é de até 50 ms após um clique de botão. Ampulhetas podem sinalizar que o sistema não está travado, durante uma requisição que demore entre 0,5 s e 2 s. Quando a ação demorar mais do que 2 segundos, uma mensagem indicando a demora para cada passo sendo realizado deve ser exibida, juntamente com uma barra de progresso e opções de cancelamento. Ações que demorem mais do que 10 segundos (demoradas) devem possuir um <em>feedback</em> de finalização, como uma indicação visual destacada ou sinalização sonora.</p>
+<p>Fonte: [1]</p>
+<h3 id="19-o-que-significa-projeto-estetico-e-minimalista-de-nielsen">19. O que significa “projeto estético e minimalista” de Nielsen?</h3>
+<p>Nielsen afirma que os diálogos não devem conter informações que sejam irrelevantes ou raramente necessárias, já que cada unidade extra de informação compete com as informações mais relevantes e reduz a visibilidade relativa delas.</p>
+<p>Fonte: [1]</p>
+<h3 id="20-o-que-significa-projetar-para-o-erro-de-nielsen-como-fazer-isso">20. O que significa “projetar para o erro” de Nielsen? Como fazer isso?</h3>
+<p>Significa elaborar um projeto de IHC prevendo que qualquer erro potencial será cometido, para que o designer possa propor soluções de recuperação ao usuário em caso de erros. Não é recomendável colocar ações perigosas perto de ações frequentes em menus.</p>
+<p>Fonte: [1]</p>
+<h3 id="21-qual-das-duas-telas-a-ou-b-a-seguir-deve-ser-implementada-em-um-sistema-justifique-a-sua-resposta">21. Qual das duas telas, (a) ou (b), a seguir deve ser implementada em um sistema? Justifique a sua resposta</h3>
+<p><img alt="" src="../assets/principios_15_49_01.png" /></p>
+<p>A tela (b) apresenta uma mensagem de feedback ao usuário e a oportunidade de recuperação, por meio da opção tentar novamente, e retomada de um caminho de interação, por meio da opção voltar para edição.</p>
+<h3 id="22-o-que-e-padroes-de-design-de-ihc-cite-um-exemplo">22. O que é Padrões de Design de IHC? Cite um exemplo</h3>
+<p>Padrões de Design propõem soluções padronizadas para problemas comuns. Um exemplo de padrão de design de interface é o Acordeão, menu lateral que pode ser colapsado, muito utilizado em diversas interfaces. Ele pode ser descrito pelos seguintes elementos:</p>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Título</strong></td>
+<td>Acordeão</td>
+</tr>
+<tr>
+<td><strong>Problema</strong></td>
+<td>O usuário precisa encontrar um item dentre as opções de navegação</td>
+</tr>
+<tr>
+<td><strong>Solução</strong></td>
+<td>Empilhar painéis vertical ou horizontalmente, abrindo um painel por vez e colapsando os demais</td>
+</tr>
+<tr>
+<td><strong>Usar quando</strong></td>
+<td>Como mecanismo de navegação, equivalente a guias e substituto à árvores de navegação.</td>
+</tr>
+<tr>
+<td><strong>Como</strong></td>
+<td>Os painéis são dispostos verticalmente ou horizontalmente, sendo apenas um deles aberto por vez. Em geral, painéis verticais destinam-se aos submenus e horizontais, a grandes áreas de conteúdo. Alguns cuidados devem ser tomados: <li>Animar a abertura dos painéis de forma sutil, no máximo 250 ms.</li> Permitir que a navegação seja feita pelas setas do teclado. <li> Destacar o painel atual. </li> O tamanho total do Acordeão deve aumentar ou diminuir para acomodar o conteúdo adequadamente</td>
+</tr>
+<tr>
+<td><strong>Porquê</strong></td>
+<td>Para comprimir muitos elementos em um espaço reduzido da tela.</td>
+</tr>
+<tr>
+<td><strong>Exemplo</strong></td>
+<td><img src="../assets/principios_16_31_52.png" width="75% vw"/></td>
+</tr>
+</tbody>
+</table>
+<p>Tabela 1: Descrição do Acordeão. Fonte: [1]</p>
+<p>Fonte: [1]</p>
+<h2 id="bibliografia">Bibliografia</h2>
+<p>[1] Barbosa, S. D. J.; Silva, B. S. da; Silveira, M. S.; Gasparini, I.; Darin, T.; Barbosa, G. D. J. (2021) Interação Humano-Computador e Experiência do usuário. Autopublicação. ISBN: 978-65-00-19677-1.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      2022 Nicolas Souza
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.12658920.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.5cf534bf.min.js"></script>
+      
+    
+  </body>
+</html>
