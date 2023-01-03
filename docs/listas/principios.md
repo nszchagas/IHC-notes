@@ -2,9 +2,6 @@
 
 ## Lista de Exercícios
 
-Estudante: Nicolas Chagas Souza <br/>
-Matrícula: 20/0042327
-
 ### 1. O que são princípios, diretrizes (guidelines) e padrões na literatura de IHC?
 
 Princípios representam objetivos gerais e de alto nível, diretrizes são regras gerais que podem ser observadas na prática e padrões são soluções específicas a certos contextos bem delimitados, envolvendo certos usuários desempenhando determinadas tarefas.
